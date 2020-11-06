@@ -1,0 +1,9 @@
+<!--components/search/search.wxml-->
+<view class="search">
+   <navigator url="../../pages/search/search" 
+class="navigator"
+hover-class="none">
+   <view class="text">搜索</view> 
+</navigator>
+</view>
+

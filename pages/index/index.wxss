@@ -1,0 +1,40 @@
+
+swiper{
+  margin-top: 89rpx;
+}
+.recommend-box{
+  display: flex;
+}
+.recommend-nav{
+  flex: 1;
+  padding: 25rpx;
+}
+.image{
+  width: 100%;
+}
+.floor-box{
+  margin-top: 20rpx;
+}
+.content-box{
+  overflow: hidden;
+  height:400rpx ;
+  padding: 0 10rpx;
+}
+.content-image{
+  float: left;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+.content-image:nth-last-child(-n+4){
+  height: 50%;
+  border-left: 10rpx solid transparent;
+}
+.content-image:nth-child(4),
+.content-image:nth-child(5){
+  margin-top: 10rpx;
+}
+.floor-images{width: 100%;}
+
+.floor-images:nth-last-child(-n+4){
+  height: 100%;
+}

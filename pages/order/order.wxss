@@ -1,0 +1,82 @@
+.address{
+  text-align: center;
+  margin-top: 15rpx;
+  border-bottom: 1px solid #ccc;
+}
+.address-content{
+  font-size: 30rpx;
+}
+.address .address-content .person-info text{
+  padding: 0 15rpx;
+}
+.person-info,.address-info{
+  margin-bottom: 15rpx;
+}
+.ifPay{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 0;
+  color: rgb(107, 151, 62);
+}
+.ifPay .iconfont{
+  font-size: 50rpx;
+}
+
+.item-box{
+  padding-bottom: 40rpx;
+}
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200rpx;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.items:last-child{
+  margin-bottom: 0;
+}
+.image-box{
+  flex: 2;
+}
+.image-box image{
+  width: 80%;
+  height: 100%;
+}
+.info-box{
+  flex: 5;
+  position: relative;
+  padding-left: 20rpx;
+}
+.title{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.price{
+  padding: 10rpx 0;
+  font-size: 35rpx;
+  color: red;
+}
+.count{
+position: absolute;
+right: 30rpx;
+bottom: -10rpx;
+}
+.bottom-tab{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 230rpx;
+  padding-bottom: 30rpx;
+}
+.btnStyle{
+  width: 130rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 15rpx;
+}

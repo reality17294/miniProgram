@@ -1,0 +1,35 @@
+<!--pages/category/category.wxml-->
+<search></search>
+<view class="container">
+  <scroll-view scroll-y class="scroll-left">
+    <view class="aside-items">
+      <block wx:for="{{asideData}}" wx:key="index">
+        <view class="items {{index === currentIndex?'active':''}}" bind:tap="itemClick"
+        data-index="{{index}}"
+        >{{item}}</view>
+      </block>
+    </view>
+  </scroll-view>
+<scroll-view scroll-y scroll-top="{{scrollTop}}" class="scroll-right">
+   <block
+   wx:for="{{contentData}}"
+   wx:key="index"
+   >
+ <view class="title">{{item.cat_name}}</view>
+ <view class="item-box">
+  <block
+ wx:for="{{item.children}}"
+ wx:key="index"
+ >
+ <navigator hover-class="none" class="item-nav" url="/pages/good-list/goodList?cid={{item.cat_id}}">
+   <image src="{{item.cat_icon}}" mode="widthFix"></image>
+  <view class="cates">{{item.cat_name}}</view>
+ </navigator>
+</block>
+</view>
+
+ 
+  </block>
+</scroll-view>
+</view>
+

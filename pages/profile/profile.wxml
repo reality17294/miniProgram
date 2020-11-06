@@ -1,0 +1,74 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+<view class="withoutLogin"  wx:if="{{showLoginBtn}}">
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
+</view>
+<view class="info-container" wx:else>
+  <view class="user-info">
+<view class="image-box">
+<image src="{{userInfo.avatarUrl}}" mode="widthFix"></image>
+</view>
+<view class="info-box">
+<view class="nickname">
+  {{userInfo.nickName}}
+</view>
+</view>
+</view>
+<view class="detail-box">
+  <view class="user-action">
+  <navigator url="/pages/star-goods/star-goods">
+    <view class="count">{{stars}}</view>
+    <view class="kind">收藏的商品</view>
+  </navigator>
+  <navigator>
+    <view class="count">0</view>
+    <view class="kind">收藏的店铺</view>
+  </navigator>
+  <navigator>
+    <view class="count">0</view>
+    <view class="kind">关注的商品</view>
+  </navigator>
+  <navigator>
+    <view class="count">0</view>
+    <view class="kind">我的足迹</view>
+  </navigator>
+</view>
+<view class="orderList">
+  <view class="title">我的订单</view>
+  <view class="order-detail">
+    <navigator url="/pages/order/order">
+      <view class="iconfont icon-dingdan" ></view>
+      <view>全部订单</view>
+    </navigator> <navigator>
+      <view class="iconfont icon-daifukuan"></view>
+      <view>代付款</view>
+    </navigator> <navigator>
+      <view class="iconfont icon-yifahuo"></view>
+      <view>已发货</view>
+    </navigator> <navigator>
+      <view class="iconfont icon-tuikuan"></view>
+      <view>退款/售后</view>
+    </navigator>
+  </view>
+</view>
+<view class="user-query">
+    <navigator class="title">
+      收货地址管理
+    </navigator>
+    <navigator class="title">
+      联系客服
+    </navigator> 
+     <navigator class="title">
+      意见反馈
+    </navigator> 
+     <navigator url="" class="title">
+      关于我们
+    </navigator>
+  <navigator class="title">
+     分享给好友
+    </navigator>
+</view>
+</view>
+</view>
+</view>
+

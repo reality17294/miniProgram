@@ -1,0 +1,65 @@
+/* pages/good-list/goodList.wxss */
+
+
+.first-tab{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+navigator{
+  padding-top: 20rpx;
+}
+.image-box{
+  flex: 2;
+}
+.content-box{
+  flex: 3;
+  position: relative;
+}
+.image-box .image{
+  width: 100%;
+}
+.title{
+  font-size: 30rpx;
+  padding: 15rpx;
+}
+.price{
+  position: absolute;
+  bottom: 30rpx;
+  left: 30rpx;
+  color: red;
+}
+
+
+.bottomTip{
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+}
+
+
+.first-tab{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.image-box{
+  flex: 2;
+}
+.content-box{
+  flex: 3;
+  position: relative;
+}
+.image-box .image{
+  width: 100%;
+}
+.title{
+  font-size: 30rpx;
+  padding: 15rpx;
+}
+.price{
+  position: absolute;
+  bottom: 30rpx;
+  left: 30rpx;
+  color: red;
+}
+
+

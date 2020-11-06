@@ -1,0 +1,13 @@
+<!--components/swiper/swiper.wxml-->
+
+<swiper indicator-dots autoplay circular>
+  <block wx:for="{{banner}}" wx:key="index">
+    <swiper-item>
+      <navigator url="/pages/good-detail/good-detail?goods_id={{item.goods_id}}">
+        <image src="{{item.image_src}}" mode="widthFix" class="image"></image>
+
+      </navigator>
+    </swiper-item>
+
+  </block>
+</swiper>

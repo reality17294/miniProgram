@@ -1,0 +1,21 @@
+<!--pages/star-goods/star-goods.wxml-->
+<view class="container">
+      <block
+      wx:for="{{goodList}}"
+      wx:key="index"
+      >
+    <navigator url="/pages/good-detail/good-detail?goods_id={{item.goods_id}}">
+    <view class="first-tab"> 
+       <view class="image-box">
+        <image src="{{item.goods_small_logo}}" mode="widthFix" class="image"></image>
+       </view>
+        <view class="content-box">
+          <view class="title">{{item.goods_name}}</view>
+          <view class="price">￥{{item.goods_price}}</view>
+        </view>
+    </view>
+  </navigator>
+    </block>
+ 
+
+</view>

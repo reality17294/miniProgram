@@ -1,0 +1,22 @@
+/* components/search/search.wxss */
+.search{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.navigator{
+  height: 70rpx;
+  padding: 10rpx;
+  background-color: #eb4450;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 28rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}

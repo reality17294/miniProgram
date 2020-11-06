@@ -1,0 +1,45 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+<view class="address">
+<view class="address-content">
+  <view class="person-info">
+    <text>姓名：{{address.userName}}</text>
+    <text>手机：{{address.telNumber}}</text>
+    <text>邮编：{{address.postalCode}}</text>
+  </view>
+  <view class="address-info">
+    <view class="address-detail">地址：{{address.addressDetail}}</view>
+  </view>
+</view>
+</view>
+<view class="ifPay"> 
+  <view class="iconfont icon-yifukuan">
+  </view>
+  <view>已付款></view>
+
+</view>
+<view class="item-box">
+    <block wx:for="{{itemList}}" wx:key="index">
+<view class="items">
+  
+  <view class="image-box">
+    <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+  </view>
+  <view class="info-box">
+  <view class="title">{{item.goods_name}}</view>
+  <view class="price">￥{{item.goods_price}}</view>
+  <view class="count">x{{item.num}}</view>
+  </view>
+</view>
+  </block>
+  </view>
+
+  <view class="bottom-tab">
+   <view class="btnStyle">
+    延长收货
+    </view>
+   <view  class="btnStyle"> 查看物流</view>
+   <view  class="btnStyle">确认收货</view>
+   
+</view>
+</view>

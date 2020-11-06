@@ -1,0 +1,43 @@
+
+<view class="container">
+<swiper autoplay indicator-dots circular >
+  <block
+    wx:for="{{itemDetail.pics}}"
+    wx:key="index"
+    >
+  <swiper-item data-url="{{item.pics_mid_url}}" bind:tap="swiperClick">
+  <image src="{{item.pics_mid_url}}" mode="widthFix" class="image"></image>
+  </swiper-item>
+</block>
+</swiper>
+<view class="price">￥{{itemDetail.goods_price}}</view>
+<view class="content-box">
+  <view class="title">{{itemDetail.goods_name}}
+</view>
+<view class="collected" bind:tap="starClick">
+  <view class="iconfont  {{noStar?'icon-shoucang':'icon-collection'}}"></view>
+  收藏
+</view>
+</view>
+<view class="goods-info">
+  <view class="detail-title">图文详情</view>
+  <view class="detail-info">
+    <rich-text nodes="{{itemDetail.goods_introduce}}"></rich-text>
+  </view>
+</view>
+</view>
+<view class="botton-tab">
+  <view class="service">客服
+    <button open-type="contact"></button>
+  </view>
+  <view class="share">分享
+    <button open-type="share"></button>
+  </view>
+  <view class="cart">
+    <navigator open-type="switchTab" url="/pages/cart/cart">
+      购物车
+    </navigator>
+  </view>
+  <view class="addCart" bind:tap="addCart">加入购物车</view>
+  <view class="purchase">立即购买</view>
+</view>

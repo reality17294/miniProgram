@@ -1,0 +1,36 @@
+<!--pages/good-list/goodList.wxml-->
+<search></search>
+<view class="container">
+  <tab-control title="{{title}}"
+bind:itemClick="itemClick"
+>
+
+  <block wx:if="{{index === 0}}">
+      <block
+      wx:for="{{goodList}}"
+      wx:key="index"
+      >
+    <navigator hover-class="none" url="/pages/good-detail/good-detail?goods_id={{item.goods_id}}">
+    <view class="first-tab">
+      <block wx:if="{{item.goods_small_logo}}">
+       <view class="image-box">
+        <image src="{{item.goods_small_logo}}" mode="widthFix" class="image"></image>
+       </view>
+        <view class="content-box">
+          <view class="title">{{item.goods_name}}</view>
+          <view class="price">￥{{item.goods_price}}</view>
+        </view>
+      </block>
+  
+
+    
+    </view>
+  </navigator>
+    </block>
+  </block>
+  <block wx:if="{{index === 1}}">1</block>
+  <block wx:if="{{index === 2}}">2</block>
+</tab-control>
+</view>
+
+

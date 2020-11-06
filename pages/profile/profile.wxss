@@ -1,0 +1,65 @@
+.container{
+  height: 100vh;
+  background-color: #ccc;
+}
+.withoutLogin{
+  padding-top: 50%;
+}
+.info-container{
+  display: flex;
+  flex-direction: column;
+}
+.user-info{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(126, 197, 56);
+}
+.image-box{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx 0;
+}
+.image-box image{
+  width: 100%;
+  border: 1rpx solid #ccc;
+  border-radius: 64rpx;
+}
+.info-box{
+  margin-bottom: 30rpx;
+}
+.detail-box{
+  padding: 0 20rpx;
+font-size: 32rpx;
+}
+.user-action{
+  display: flex;
+  background-color: #fff;
+}
+.user-action navigator{
+flex: 1;
+text-align: center;
+white-space: nowrap;
+padding: 10rpx 15rpx;
+}
+.count{
+  color: red;
+}
+.orderList,.user-query{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.title{
+  border-bottom: 1rpx solid #ccc;
+  padding: 30rpx;
+}
+.order-detail{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10rpx;
+}
+.order-detail .iconfont{
+  font-size: 40rpx;
+}

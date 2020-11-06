@@ -1,0 +1,27 @@
+<search class="search"></search>
+<swiper banner="{{banner}}" ></swiper>
+<view class="recommend-box">
+  <block
+  wx:for="{{recommend}}" wx:key="index" 
+  >
+  <navigator hover-class="none" open-type="{{item.open_type?'switchTab':'navigate'}}"
+  url="{{item.navigator_url}}"
+  class="recommend-nav">
+    <image src="{{item.image_src}}" mode="widthFix" class="image"></image>
+   </navigator> 
+  </block>
+  
+</view>
+<view class="floor">
+  <block wx:for="{{floor}}" wx:key="index">
+    <view class="floor-box">
+    <image src="{{item.floor_title.image_src}}" mode="widthFix" class="image"></image>
+    <view class="content-box">
+    <block wx:for="{{item.product_list}}" wx:key="name">
+        <navigator class="content-image" open-type="{{item.open_type}}" url="{{item.navigator_url}}">
+          <image src="{{item.image_src}}" mode="{{index === 0?'widthFix':'scaleToFill'}}" class="floor-images"></image>
+        </navigator>  
+    </block> </view>
+</view>
+  </block>
+</view>
